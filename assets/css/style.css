@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    
 }
 
 .container {
@@ -12,7 +11,7 @@ body{
     "galeria"
     "footer"
     ;
-    grid-template-rows: 1fr 1fr 10fr 60px;
+    grid-template-rows: 80px 100px 10fr 60px;
     min-height: 100vh;
 }
 
@@ -20,18 +19,46 @@ body{
 /* ----------- navbar ----------- */
 .navbar{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     grid-area: nav;
     background: #0082e6;
+    color: #fff;
+    padding: 10px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt {
+    margin-right: 10px; 
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo h1 {
+    font-weight: bold;
+}
 
 
 
 /* ----------- Filtro ----------- */
 .filtro{
     grid-area: filtro;
-    background-color: green;
+    background-color: #A4A4A4;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -62,14 +89,30 @@ body{
     cursor: pointer;
 }
 
+
+
 /* ----------- galeria ----------- */
 .galeria {
     display: grid;
     grid-area: galeria;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: #fff;
 }
+
+.product {
+    border: 1px;
+    border-color: black;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
 
 
 /* ----------- footer ----------- */
@@ -79,7 +122,8 @@ footer{
     align-items: center;
     font-weight: bold;
     grid-area: footer;
-    background-color: rgb(90, 90, 90);
+    color: #fff;
+    background-color: #003e6d;
     height: 60px;
 }
 
